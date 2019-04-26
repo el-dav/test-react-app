@@ -16,7 +16,7 @@ const App: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Google Cloud 5
+          2 Learn Google Cloud 5
         </a>
       </header>
     </div>
