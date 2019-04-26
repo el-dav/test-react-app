@@ -16,11 +16,11 @@ const App: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Google Cloud 5
         </a>
       </header>
     </div>
   );
-}
+};
 
 export default App;
