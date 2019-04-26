@@ -1,0 +1,21 @@
+{
+  "steps": [
+    {
+      "name": "gcr.io/cloud-builders/yarn",
+      "args": ["install"]
+    },
+    {
+      "name": "gcr.io/cloud-builders/yarn",
+      "args": ["test:ci"]
+    },
+    {
+      "name": "gcr.io/cloud-builders/yarn",
+      "args": ["build"]
+    },
+    {
+      "name": "gcr.io/cloud-builders/gcloud",
+      "args": ["--quiet", "app", "deploy"]
+    }
+  ],
+  "timeout": "1800s"
+}
