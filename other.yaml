@@ -1,19 +1,20 @@
 # [START runtime]
 runtime: custom
+service: other-deploy
 env: flex
 # [END runtime]
 
 env_variables:
-  SERVE_PATH: "build"
+  SERVE_PATH: "."
 
 
 # [START handlers]
 handlers:
  - url: /
-   static_files: build/index.html
-   upload: build/index.html
+   static_files: index.html
+   upload: index.html
 
  - url: /(.*)
-   static_files: build/\1
-   upload: build/(.*)
+   static_files: ./\1
+   upload: ./(.*)
 # [END handlers] 

@@ -8,8 +8,8 @@
     "serve": "^11.0.0"
   },
   "scripts": {
-    "start": "serve -s build",
-    "dev": "react-scripts start",
+    "serve": "serve -s $SERVE_PATH",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true react-scripts test",
